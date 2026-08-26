@@ -154,26 +154,18 @@ function Career() {
               sizes="(max-width: 767px) calc(100vw - 32px), 539px"
               src={OsteoFacade}
             />
-            <div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/20 bg-blue-dark/90 px-5 py-4 text-white shadow-lg backdrop-blur-md">
-              <strong className="block text-sm">
-                Osteo Ortopedia e Traumatologia
-              </strong>
-              <span className="mt-0.5 block text-xs text-white/65">
-                Criciúma — SC
-              </span>
-            </div>
           </div>
           <div className="flex w-full min-w-0 flex-1 flex-col lg:max-w-[560px]">
             <span className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-blue-light">
               Atendimento e segurança
             </span>
             <div className="mb-5 flex flex-col text-4xl font-bold leading-[1.05] tracking-[-0.04em] md:text-5xl">
-              <span>Da consulta na Osteo</span>
+              <span>Da consulta</span>
               <span className="text-blue-light">ao cuidado hospitalar</span>
             </div>
             <p className="max-w-xl text-base leading-7 text-gray/75">
-              O atendimento e o acompanhamento são realizados na Osteo, em
-              Criciúma. Quando há indicação cirúrgica, o procedimento é
+              O atendimento e o acompanhamento são realizados na Clínica Osteo,
+              em Criciúma. Quando há indicação cirúrgica, o procedimento é
               programado em ambiente hospitalar apropriado, com equipe
               especializada, recursos compatíveis com cada caso e protocolos de
               segurança.
