@@ -12,7 +12,7 @@ const HERO_WORDS = [
   "felicidade",
 ];
 
-const WORD_CHANGE_INTERVAL = 2800;
+const WORD_CHANGE_INTERVAL = 2200;
 
 export function RotatingHeroWord() {
   const [wordIndex, setWordIndex] = useState(0);
