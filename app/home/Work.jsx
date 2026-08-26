@@ -564,7 +564,8 @@ function Work() {
               Cuidado especializado
             </span>
             <h2 className="mt-3 text-4xl font-bold tracking-[-0.04em] text-blue-dark md:text-6xl">
-              Tratamentos para todo o pé e tornozelo
+              <span className="block">Tratamentos para todo</span>
+              <span className="block">o pé e tornozelo</span>
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-gray/70 md:text-lg">
               Encontre a região ou condição que procura. Clique em um tratamento
