@@ -5,8 +5,12 @@ import InstaGradient from "../public/insta-gradient.svg";
 
 import RiInstagramLine from "~icons/ri/instagram-line";
 
-export function ButtonInstagram(props) {
-  if (props.iconOnly) {
+interface ButtonInstagramProps {
+  iconOnly?: boolean;
+}
+
+export function ButtonInstagram({ iconOnly = false }: ButtonInstagramProps) {
+  if (iconOnly) {
     return (
       <Button
         isExternal
@@ -27,7 +31,6 @@ export function ButtonInstagram(props) {
       href={"https://www.instagram.com/cesarbenetton/"}
       startContent={<RiInstagramLine height={20} width={20} />}
       variant="flat"
-      {...props}
     >
       Instagram
     </Button>

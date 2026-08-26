@@ -1,4 +1,4 @@
-import Icons from 'unplugin-icons/webpack'
+import Icons from "unplugin-icons/webpack";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,60 +8,54 @@ const nextConfig = {
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    })
+      use: ["@svgr/webpack"],
+    });
 
     config.plugins.push(
       Icons({
-        compiler: 'jsx',
-        jsx: 'react',
+        compiler: "jsx",
+        jsx: "react",
         autoInstall: true,
       }),
-    )
+    );
 
-    return config
+    return config;
   },
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 604800,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'picsum.photos',
+        protocol: "https",
+        hostname: "picsum.photos",
       },
     ],
   },
   async headers() {
     return [
       {
-        source: '/:path*',
+        source: "/:path*",
         headers: [
-          { key: 'X-Content-Type-Options', value: 'nosniff' },
-          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
-          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           {
-            key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=()',
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
           },
         ],
       },
       {
-        source: '/treatments/:path*',
+        source: "/treatments/:path*",
         headers: [
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
-    ]
+    ];
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-}
+};
 
-export default nextConfig
+export default nextConfig;
