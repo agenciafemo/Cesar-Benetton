@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes hero-word-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.35em);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.hero-rotating-word {
+  animation: hero-word-enter 480ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-rotating-word {
+    animation: none;
+  }
+}
+
+.yarl__thumbnails_container,
+.yarl__container {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.yarl__thumbnails_thumbnail {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.yarl__thumbnails_vignette {
+  display: none;
+}
+
+/*!* For Firefox *!*/
+/*!* Width *!*/
+/*.scrollbar-style {*/
+/*	scrollbar-width: thin;*/
+/*	scrollbar-color: rgba(0, 0, 0, 0.1) rgba(255, 255, 255, 0.1);*/
+/*}*/
+
+/*!* For Webkit-based browsers *!*/
+/*!* Width *!*/
+/*.scrollbar-style::-webkit-scrollbar {*/
+/*	z-index: 10;*/
+/*	width: 10px;*/
+/*}*/
+
+/*!* Track *!*/
+/*.scrollbar-style::-webkit-scrollbar-track {*/
+/*	background: darkgrey;*/
+/*}*/
+
+/*!* Handle *!*/
+/*.scrollbar-style::-webkit-scrollbar-thumb {*/
+/*	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);*/
+/*	border-radius: 99px;*/
+/*}*/
+
+.scrollbar-style::-webkit-scrollbar {
+  scrollbar-width: thin;
+}
+
+/* Track */
+.scrollbar-style::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+.scrollbar-style::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: darkgrey;
+}

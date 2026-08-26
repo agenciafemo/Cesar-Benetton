@@ -1,0 +1,30 @@
+# dependencies
+/node_modules
+
+# Next.js
+/.next
+/out
+
+# production and local environment
+.env*
+!.env.example
+
+# local tooling
+*.tsbuildinfo
+.vercel
+.idea
+.vscode
+.claude
+.agents
+.codex
+.DS_Store
+Thumbs.db
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# generated source images; optimized WebP files are committed
+/public/treatments/*.png
