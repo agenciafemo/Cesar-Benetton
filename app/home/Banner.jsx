@@ -5,7 +5,7 @@ import { RotatingHeroWord } from "@/components/rotating-hero-word";
 import BaselineWhatsapp from "~icons/ic/baseline-whatsapp";
 
 const WHATSAPP_URL =
-  "https://wa.me/5548991375831?text=Ol%C3%A1%2C%20Dr.%20C%C3%A9sar!%20Gostaria%20de%20agendar%20uma%20consulta.";
+  "https://wa.me/5548991375831?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20C%C3%A9sar.";
 
 function Banner() {
   return (
